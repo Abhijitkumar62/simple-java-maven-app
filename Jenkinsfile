@@ -22,5 +22,8 @@ pipeline{
                 }   
             }
         }
+        stage ('Email Notification') {
+	mail bcc: '', body: 'aaaaa', cc: '', from: '', replyTo: '', subject: 'test Jenkin', to: 'abhijitkumar62@gmail.com'	     
+	}
      }   
 }      
