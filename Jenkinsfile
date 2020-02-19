@@ -23,8 +23,10 @@ pipeline{
             }
         }
         stage ('Email Notification') {
-		script {
+		steps{
+		   script {
 			mail bcc: '', body: 'aaaaa', cc: '', from: '', replyTo: '', subject: 'test Jenkin', to: 'abhijitkumar62@gmail.com'
+		   }   
 		}
 		     
 	}
